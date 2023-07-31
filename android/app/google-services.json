@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "944047478764",
+    "project_id": "flutter-deadpool",
+    "storage_bucket": "flutter-deadpool.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944047478764:android:1b1a90ecb72746c3e692c9",
+        "android_client_info": {
+          "package_name": "com.example.deadpool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944047478764-c9lpia6iq8l452uc6ig6b24n4v9hcig1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMS1oButo5vYmbvZ1y1wlTVx8ZXumYB4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944047478764-c9lpia6iq8l452uc6ig6b24n4v9hcig1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "944047478764-1dqugkdv3nab7en8rtcj4grs6eiaq3ig.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.deadpool"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
