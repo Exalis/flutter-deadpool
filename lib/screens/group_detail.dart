@@ -1,4 +1,3 @@
-import 'package:deadpool/features/bets/bets_repository_impl.dart';
 import 'package:deadpool/features/bets/bloc/bets_bloc.dart';
 import 'package:deadpool/models/friends_group.dart';
 import 'package:deadpool/screens/add_bet_modal.dart';

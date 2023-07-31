@@ -95,6 +95,7 @@ class _CreateGroupState extends State<CreateGroup> {
                           if (value == null || value.trim().isEmpty) {
                             return 'Il faut rentrer un nom de groupe...';
                           }
+                          return null;
                         },
                         onChanged: (value) {
                           setState(() {

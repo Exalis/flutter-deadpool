@@ -1,10 +1,9 @@
 import 'package:deadpool/features/authentication/bloc/authentication_bloc.dart';
 import 'package:deadpool/models/friends_group.dart';
-import 'package:deadpool/screens/home.dart';
+import 'package:deadpool/screens/create_group.dart';
 import 'package:deadpool/widgets/add_group/passcode_input.dart';
 import 'package:deadpool/widgets/home/groups/group_item.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../features/friends_group/bloc/friends_group_bloc.dart';
@@ -135,7 +134,16 @@ class _AddGroupState extends State<AddGroup> {
                       child: const Text('Ajouter le groupe'),
                     );
                   },
-                )
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                     context,
+                     MaterialPageRoute(builder: (context) => const CreateGroup()),
+                     );
+                  },
+                  child: const Text('Je veux créer un groupe'),
+                ),
               ],
             ),
           );

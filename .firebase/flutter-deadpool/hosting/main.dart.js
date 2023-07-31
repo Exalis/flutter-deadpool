@@ -47365,7 +47365,7 @@ r.af(new A.aiD(r))
 s=a.Ws(""+r.d+r.e+r.f+r.r+r.w+r.x)
 if(s==null)r.af(new A.aiE(r))
 else r.af(new A.aiF(r,s))},
-H(a){return A.Cy(A.IO(null,B.QZ),null,A.Jg(new A.aiU(this),new A.aiV(),t.Dt,t.zO),null)}}
+H(a){return A.Cy(A.IO(null,B.R_),null,A.Jg(new A.aiU(this),new A.aiV(),t.Dt,t.zO),null)}}
 A.aiD.prototype={
 $0(){this.a.y=B.mw},
 $S:0}
@@ -47436,7 +47436,7 @@ A.aiH.prototype={
 $0(){this.a.x=A.eL(this.b,null)},
 $S:0}
 A.aiT.prototype={
-$2(a,b){return A.mI(B.QY,new A.aiG(this.a,b,a),null)},
+$2(a,b){return A.mI(B.QZ,new A.aiG(this.a,b,a),null)},
 $S:122}
 A.aiG.prototype={
 $0(){var s,r=this,q=r.a
@@ -47489,7 +47489,7 @@ s=A.e5(a,!0)
 s.hK(A.aKH(null,B.C,!0,null,new A.akG(b),a,null,r,B.yp,!0,t.z))}},
 $S:121}
 A.akG.prototype={
-$1(a){var s=null,r=this.a,q=A.a([A.mI(B.R_,new A.akD(r,a),s)],t.p)
+$1(a){var s=null,r=this.a,q=A.a([A.mI(B.R0,new A.akD(r,a),s)],t.p)
 return new A.rO(A.cU("Groupe cr\xe9er, partage le code : "+r.d,s,s,s,s,s,s),q,B.fV,s)},
 $S:473}
 A.akD.prototype={
@@ -47508,7 +47508,8 @@ $2(a,b){var s=null,r=this.b,q=A.D(r).p3.d,p=this.a,o=t.p
 return new A.c4(B.bo,A.fi(A.a([A.cU("Cr\xe9er un groupe",s,s,s,q==null?s:q.bx(A.D(r).ax.b),B.es,s),A.M7(A.fi(A.a([A.awt(s,B.E7,s,new A.akH(p),new A.akI()),B.aW,A.jr(s,s,new A.akJ(p,a),t._P,t.gA)],o),B.an,B.aP,B.af),p.d)],o),B.an,B.jh,B.af),s)},
 $S:474}
 A.akI.prototype={
-$1(a){if(a==null||B.c.mE(a).length===0)return"Il faut rentrer un nom de groupe..."},
+$1(a){if(a==null||B.c.mE(a).length===0)return"Il faut rentrer un nom de groupe..."
+return null},
 $S:49}
 A.akH.prototype={
 $1(a){var s=this.a
@@ -47591,7 +47592,7 @@ A.a7C.prototype={
 $2(a,b){return new A.px(this.a[b],null)},
 $S:521}
 A.we.prototype={
-H(a){var s,r,q,p,o,n,m=null,l=A.IO(m,B.QX),k=this.c,j=A.D(a).p3.r
+H(a){var s,r,q,p,o,n,m=null,l=A.IO(m,B.QY),k=this.c,j=A.D(a).p3.r
 j=j==null?m:j.Gr(A.D(a).ax.b,28)
 j=A.cU(k.c,m,m,m,j,m,m)
 s=A.yi(15)
@@ -47818,7 +47819,7 @@ $2(a,b){var s,r=null,q=this.b,p=A.D(q).ax,o=p.d
 p=o==null?p.b:o
 o=A.D(q).ax
 s=o.e
-return A.mI(B.R0,new A.ar2(this.a,q,a),A.Lp(r,r,p,r,r,r,r,r,r,s==null?o.c:s,r,r,r,r,B.fV,r,r,r,r))},
+return A.mI(B.R1,new A.ar2(this.a,q,a),A.Lp(r,r,p,r,r,r,r,r,r,s==null?o.c:s,r,r,r,r,B.fV,r,r,r,r))},
 $S:122}
 A.ar2.prototype={
 $0(){this.a.$2(this.b,this.c)},
@@ -90160,8 +90161,8 @@ B.hS=new A.a1H(0,"pixel")
 B.Bi=new A.t7(null,null,null,null,null,null,null)
 B.R2=new A.dq("Aucun pari n'a \xe9t\xe9 cr\xe9er pour le moment.",null,null,null,null,null,null,null,null)
 B.Bj=new A.kI(B.J,null,null,B.R2,null)
-B.R1=new A.dq("D\xe9connexion, veuillez patienter ...",null,null,null,null,null,null,null,null)
-B.Bk=new A.kI(B.J,null,null,B.R1,null)
+B.QW=new A.dq("D\xe9connexion, veuillez patienter...",null,null,null,null,null,null,null,null)
+B.Bk=new A.kI(B.J,null,null,B.QW,null)
 B.UB=new A.aiw(0,"material")
 B.lo=new A.yB(null)
 B.ln=new A.kI(B.J,null,null,B.lo,null)
@@ -92114,8 +92115,8 @@ B.xW=new A.k6(5,"timeout")
 B.Mt=new A.vH(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Ra=new A.dq("Erreur...",null,null,null,null,null,null,null,null)
 B.Mu=new A.nR(B.Ra,null,null,null,null,null,null,null,null,null,null,null,B.ik,null,null,B.eY,B.T,null)
-B.QW=new A.dq("Erreur lors de l'ajout",null,null,null,null,null,null,null,null)
-B.Mv=new A.nR(B.QW,null,null,null,null,null,null,null,null,null,null,null,B.ik,null,null,B.eY,B.T,null)
+B.QX=new A.dq("Erreur lors de l'ajout",null,null,null,null,null,null,null,null)
+B.Mv=new A.nR(B.QX,null,null,null,null,null,null,null,null,null,null,null,B.ik,null,null,B.eY,B.T,null)
 B.xX=new A.Q7(0,"permissive")
 B.Uz=new A.Q7(1,"normal")
 B.eq=new A.Dc(null,null,null,null,!1)
@@ -92437,11 +92438,11 @@ B.PR=new A.x(!0,B.k,null,"Roboto",null,null,null,null,null,null,null,null,null,n
 B.QU=new A.eG(B.PA,B.QD,B.Qo,B.Oi,B.Qj,B.Pu,B.QH,B.OJ,B.Pc,B.Qe,B.Ob,B.Qp,B.Qh,B.Qb,B.PR)
 B.yj=new A.QR(1,"longestLine")
 B.QV=new A.dq("Ajouter un pari !",null,null,null,null,null,null,null,null)
-B.QX=new A.dq("C'est l'heure de voter !",null,null,null,null,null,null,null,null)
-B.QY=new A.dq("Ajouter le groupe",null,null,null,null,null,null,null,null)
-B.QZ=new A.dq("Rejoindre un group!",null,null,null,null,null,null,null,null)
-B.R_=new A.dq("Partager",null,null,null,null,null,null,null,null)
-B.R0=new A.dq("Ajouter mon vote",null,null,null,null,null,null,null,null)
+B.QY=new A.dq("C'est l'heure de voter !",null,null,null,null,null,null,null,null)
+B.QZ=new A.dq("Ajouter le groupe",null,null,null,null,null,null,null,null)
+B.R_=new A.dq("Rejoindre un group!",null,null,null,null,null,null,null,null)
+B.R0=new A.dq("Partager",null,null,null,null,null,null,null,null)
+B.R1=new A.dq("Ajouter mon vote",null,null,null,null,null,null,null,null)
 B.R5=new A.dq("Mes groupes de Deadpool",null,null,null,null,null,null,null,null)
 B.R6=new A.dq("Cr\xe9er le group",null,null,null,null,null,null,null,null)
 B.R7=new A.dq("Ajouter",null,null,null,null,null,null,null,null)

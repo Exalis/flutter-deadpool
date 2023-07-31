@@ -1,5 +1,6 @@
 import 'package:deadpool/features/authentication/bloc/authentication_bloc.dart';
 import 'package:deadpool/features/friends_group/bloc/friends_group_bloc.dart';
+import 'package:deadpool/screens/add_goup.dart';
 import 'package:deadpool/widgets/home/groups/group_item.dart';
 import 'package:deadpool/widgets/home/no_groups.dart';
 import 'package:flutter/material.dart';
@@ -40,10 +41,12 @@ class HomeScreen extends StatelessWidget {
                 return const Center(child: CircularProgressIndicator());
               }
 
-              if(authState is AuthenticationFailure){
-                return const Center(child: Text("Déconnexion, veuillez patienter ..."),);
+              if (authState is AuthenticationFailure) {
+                return const Center(
+                  child: Text("Déconnexion, veuillez patienter..."),
+                );
               }
-              
+
               var usersGroup = state.groups
                   .where((group) => group.users
                       .contains((authState as AuthenticationSuccess).uid))
@@ -51,10 +54,28 @@ class HomeScreen extends StatelessWidget {
 
               return usersGroup.isEmpty
                   ? const NoGroups()
-                  : ListView.builder(
-                      itemCount: usersGroup.length,
-                      itemBuilder: (context, index) =>
-                          GroupItem(group: usersGroup[index]));
+                  : Stack(
+                      children: [
+                        ListView.builder(
+                            itemCount: usersGroup.length,
+                            itemBuilder: (context, index) =>
+                                GroupItem(group: usersGroup[index])),
+                        Positioned(
+                          bottom: 20,
+                          right: 20,
+                          child: FloatingActionButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const AddGroup()),
+                              );
+                            },
+                            child: const Icon(Icons.add),
+                          ),
+                        )
+                      ],
+                    );
             },
           ),
         );

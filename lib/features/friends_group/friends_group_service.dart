@@ -46,7 +46,7 @@ class FriendsGroupService {
         'users': [...group.users, uid]
       });
       return true;
-    } on Exception catch (e) {
+    } on Exception {
       return false;
     }
   }

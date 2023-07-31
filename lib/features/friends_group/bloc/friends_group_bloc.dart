@@ -26,7 +26,7 @@ class FriendsGroupBloc extends Bloc<FriendsGroupEvent, FriendsGroupState> {
           group = await _repo.getAllUsersDataFromGroup(group);
         }
 
-        emit(
+         emit(
             state.copyWith(groups: groups, status: FriendsGroupStatus.success));
       }
     }
